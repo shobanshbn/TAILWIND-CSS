@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Borders</title>
+  </head>
+  <body>
+    <h1 class="text-center text-3xl text-red-600 underline">Borders</h1>
+    <!-- Border Width & Colors -->
+    <!-- https://tailwindcss.com/docs/border-width -->
+    <div class="border-3 border-green-900 mt-10">
+      <div class="w-96 m-3 p-5 border">Border All Around</div>
+      <div class="w-96 m-3 p-5 border-2">Border-Width</div>
+      <div class="w-96 m-3 p-5 border-4 border-red-800">Colored Border</div>
+      <div class="w-96 m-3 p-5 border-x-2 border-red-800">Border X-Axis</div>
+      <div class="w-96 m-3 p-5 border-y-2 border-red-800">Border Y-Axis</div>
+      <div class="w-96 m-3 p-5 border-r-2 border-red-800">Border Rigth</div>
+      <div class="w-96 m-3 p-5 border-l-2 border-red-800">Border Left</div>
+      <div class="w-96 m-3 p-5 border-t-2 border-red-800">Border Top</div>
+      <div class="w-96 m-3 p-5 border-b-5 border-red-800">Border Bottom</div>
+    </div>
+    <!-- Border Radius -->
+    <!-- https://tailwindcss.com/docs/border-radius -->
+    <h1 class="text-center text-3xl text-red-600 underline">Border Radius</h1>
+    <div class="border-3 border-green-900 mt-10">
+      <div class="w-96 m-3 p-5 bg-teal-200 rounded">Border Rounded</div>
+      <div class="w-96 m-3 p-5 bg-teal-200 rounded-lg">
+        Border Rounded Large
+      </div>
+      <div class="w-96 m-3 p-5 bg-teal-200 rounded-xl">
+        Border Rounded Extra Large
+      </div>
+      <div class="w-96 m-3 p-5 bg-teal-200 rounded-2xl">Border Rounded 2xl</div>
+      <div class="w-96 m-3 p-5 bg-teal-200 rounded-3xl">Border Rounded 3xl</div>
+      <div class="w-96 m-3 p-5 bg-teal-200 rounded-full">
+        Border Rounded full
+      </div>
+    </div>
+    <!-- Specific Sides -->
+    <h1 class="text-center text-3xl text-red-600 underline mt-10">
+      Border Radius specific sides
+    </h1>
+    <div class="w-96 m-3 p-5 bg-teal-200 rounded-t-xl">Border Rounded top</div>
+    <div class="w-96 m-3 p-5 bg-teal-200 rounded-b-xl">
+      Border Rounded bottom
+    </div>
+  </body>
+</html>
