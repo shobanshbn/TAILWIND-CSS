@@ -8,11 +8,15 @@
     <style>
       body {
         padding: 5rem;
+        background-color: black;
       }
     </style>
   </head>
   <body>
-    <h1 class="text-pink-400 text-5xl font-extrabold">Colors</h1>
+    <div class="bg-amber-500 border-red-950 rounded-lg h-20 w-300 p-2 flex justify-center items-center  ">
+      <h1 class="text-pink-400 text-5xl font-extrabold text-center line-through">Colors</h1>
+    </div>
+   
     <!-- 1. Colors With Different Shades -->
     <!-- https://tailwindcss.com/docs/customizing-colors  -->
     <h1 class="text-yellow-500 text-center text-5xl font-extrabold font-serif">
@@ -67,6 +71,7 @@
     >
       Tailwind
     </p>
+    <br>
     <p
       class="bg-red-300 hover:bg-red-500 md:bg-yellow-500 text-white text-center text-5xl font-extrabold font-serif underline"
     >
@@ -94,15 +99,15 @@
       Accent Colors
     </h1>
     <input type="checkbox" checked />
-    <input type="checkbox" class="accent-pink-500" checked />
+    <input type="checkbox" class="accent-pink-700 m-5" checked />
     <br />
     <hr />
     <br />
     <!-- Arbitary/Custom colors -->
-    <h1 class="text-yellow-500 text-center text-5xl font-extrabold font-serif">
+    <h1 class=" bg-red-600 text-yellow-500 text-center text-5xl font-extrabold font-serif">
       Aribitary Values
     </h1>
-    <div class="bg-[#0056] text-white">Hello</div>
+    <div class="bg-yellow-400 text-white">Hello</div> 
     <p class="text-[blue]">Hello</p>
   </body>
 </html>
