@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Backgrounds & Shadows</title>
+  </head>
+  <body>
+    <h1 class="text-center text-3xl text-red-600 underline">
+      Background Images
+    </h1>
+    <!-- Background Images -->
+    <!-- https://tailwindcss.com/docs/background-image -->
+
+    <div class="flex justify-center  gap-5 ">
+        <div
+        class="h-[500px] w-[500px] bg-center bg-no-repeat bg-contain"
+        style="
+          background-image: url('https://images.pexels.com/photos/1563356/pexels-photo-1563356.jpeg?cs=srgb&dl=pexels-thatguycraig000-1563356.jpg&fm=jpg');
+        "
+            ></div>
+            
+            <div class="h-[500px] w-[500px] bg-center bg-no-repeat bg-contain"
+            style="background-image: url('https://t4.ftcdn.net/jpg/05/45/42/81/360_F_545428173_uyYWJoR9n5uJFYIWfDa2C49AzIECcU20.jpg');"
+            ></div>
+
+    </div>
+    <!-- Shadows -->
+    <!-- https://tailwindcss.com/docs/drop-shadow -->
+    <h1 class="text-center text-3xl text-red-600 underline mt-5">Shadows</h1>
+    <div class="flex flex-wrap">
+      <div class="w-[400px] mt-10 ml-4 p-3 shadow-md">Shadow Medium</div>
+      <div class="w-[400px] mt-10 ml-7 p-3 shadow-lg">Shadow Large</div>
+      <div class="w-[400px] mt-10 ml-7 p-3 shadow-xl">Shadow Extra Large</div>
+      <div class="w-[400px] mt-10 ml-7 p-3 shadow-2xl">
+        Shadow 2x Extra Large
+      </div>
+      <div class="w-[400px] mt-10 ml-7 p-3 shadow-inner">Inner Shadow</div>
+      <!-- Shadow Colors -->
+      <div class="w-[400px] mt-10 ml-7 p-3 shadow-lg shadow-teal-500">
+        Colord Shadow
+      </div>
+    </div>
+
+    <!-- Gradients -->
+    <!-- https://tailwindcss.com/docs/gradient-color-stops -->
+    <h1 class="text-center text-3xl text-red-600 underline mt-5">Gradients</h1>
+    <div
+      class="h-40 m-10 text-center p-40 bg-gradient-to-r from-purple-700 to-fuchsia-700"
+    >
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta quas
+      eaque doloribus esse, obcaecati consectetur aperiam odit, deserunt
+      officiis natus magni perspiciatis iure quos hic eveniet ipsum voluptas?
+      Corrupti, neque?
+    </div>
+    <div
+      class="h-40 m-10 text-center p-40 rounded-full bg-radial from-pink-400 from-40% to-fuchsia-700"
+    >
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Est animi enim
+      optio illum necessitatibus dolorem harum eaque. Necessitatibus velit
+      consectetur quisquam consequuntur perspiciatis, similique ad libero,
+      dolores eum, quia perferendis.
+    </div>
+  </body>
+</html>
