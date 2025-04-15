@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Flex</title>
+  </head>
+  <body>
+   <!-- https://tailwindcss.com/docs/flex -->
+   <div class="border m-10">
+    <ul class="flex">
+      <li class="bg-pink-700 m-5 p-5">01</li>
+      <li class="bg-pink-700 m-5 p-5">02</li>
+      <li class="bg-pink-700 m-5 p-5">03</li>
+      <li class="bg-pink-700 m-5 p-5">04</li>
+      <li class="bg-pink-700 m-5 p-5">05</li>
+    </ul>
+  </div>
+
+  <!-- https://tailwindcss.com/docs/flex-direction#column -->
+  <div class="border m-10">
+    <ul class="flex flex-col-reverse" >
+      <li class="bg-pink-700 m-5 p-5">01</li>
+      <li class="bg-pink-700 m-5 p-5">02</li>
+      <li class="bg-pink-700 m-5 p-5">03</li>
+      <li class="bg-pink-700 m-5 p-5">04</li>
+      <li class="bg-pink-700 m-5 p-5">05</li>
+    </ul>
+  </div>
+
+  <!-- https://tailwindcss.com/docs/justify-items -->
+  <div class="border m-10">
+    <div class="border m-10">
+      <ul class="flex justify-start">
+        <li class="bg-pink-700 m-5 p-5">01</li>
+        <li class="bg-pink-700 m-5 p-5">02</li>
+        <li class="bg-pink-700 m-5 p-5">03</li>
+        <li class="bg-pink-700 m-5 p-5">04</li>
+        <li class="bg-pink-700 m-5 p-5">05</li>
+      </ul>
+    </div>
+    <div class="border m-10">
+      <ul class="flex justify-end">
+        <li class="bg-pink-700 m-5 p-5">01</li>
+        <li class="bg-pink-700 m-5 p-5">02</li>
+        <li class="bg-pink-700 m-5 p-5">03</li>
+        <li class="bg-pink-700 m-5 p-5">04</li>
+        <li class="bg-pink-700 m-5 p-5">05</li>
+      </ul>
+    </div>
+    <div class="border m-10">
+      <ul class="flex justify-center">
+        <li class="bg-pink-700 m-5 p-5">01</li>
+        <li class="bg-pink-700 m-5 p-5">02</li>
+        <li class="bg-pink-700 m-5 p-5">03</li>
+        <li class="bg-pink-700 m-5 p-5">04</li>
+        <li class="bg-pink-700 m-5 p-5">05</li>
+      </ul>
+    </div>
+    <div class="border m-10">
+      <ul class="flex justify-evenly">
+        <li class="bg-pink-700 m-5 p-5">01</li>
+        <li class="bg-pink-700 m-5 p-5">02</li>
+        <li class="bg-pink-700 m-5 p-5">03</li>
+        <li class="bg-pink-700 m-5 p-5">04</li>
+        <li class="bg-pink-700 m-5 p-5">05</li>
+      </ul>
+    </div>
+    <div class="border m-10">
+      <ul class="flex justify-around">
+        <li class="bg-pink-700 m-5 p-5">01</li>
+        <li class="bg-pink-700 m-5 p-5">02</li>
+        <li class="bg-pink-700 m-5 p-5">03</li>
+        <li class="bg-pink-700 m-5 p-5">04</li>
+        <li class="bg-pink-700 m-5 p-5">05</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- https://tailwindcss.com/docs/order -->
+  <div class="border m-10">
+    <ul class="flex">
+      <li class="bg-pink-700 m-5 p-5 order-5">01</li>
+      <li class="bg-pink-700 m-5 p-5 order-4">02</li>
+      <li class="bg-pink-700 m-5 p-5 order-2">03</li>
+      <li class="bg-pink-700 m-5 p-5 order-3" >04</li>
+      <li class="bg-pink-700 m-5 p-5 order-1">05</li>
+    </ul>
+  </div>
+
+  <!-- Grow and shrink -->
+  <!-- https://tailwindcss.com/docs/flex-shrink -->
+  <div class="border m-10">
+    <div class="flex w-100">
+      <!-- flex-none: Prevent item from growing or shrinking -->
+      <div class="p-5 m-3 w-64 bg-pink-700 flex-none">01</div>
+      <!-- flex-initial:  Allow item to shrink but not grow, taking into account its initial size  -->
+      <div class="p-5 m-3 w-64 bg-pink-700 flex-initial">02</div>
+      <!-- flex-auto: Allow item to grow and shrink, taking into account its initial size -->
+      <div class="p-5 m-3 w-64 bg-pink-700 flex-auto">03</div>
+      <!-- flex-1: Allow item to grow and shrink as needed, ignoring its initial size -->
+      <div class="p-5 m-3 w-64 bg-pink-700 flex-1">04</div>
+      <div class="p-5 m-3 bg-pink-700">05</div>
+      <div class="p-5 m-3 bg-pink-700">06</div>
+      <div class="p-5 m-3 bg-pink-700">07</div>
+    </div>
+  </div>
+  </body>
+</html>
